@@ -33,4 +33,4 @@ class ClinicQueue:
         return self.total_served
     
     def get_name(self):
-    return self.name.upper()
+        return self.name.upper()
