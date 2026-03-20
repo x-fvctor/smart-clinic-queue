@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Clinic Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Smart Clinic Queue</h1>
+
+    <div class="actions">
+        <a href="/add">+ Add Patient</a>
+        <a href="/serve">Serve Next</a>
+    </div>
+
+    <div class="card">
+        <h2>Patients Waiting</h2>
+        <p>Total: {{ patients|length }}</p>
+
+        {% if patients %}
+            {% for patient in patients %}
+                <div class="patient">
+                    <strong>{{ patient.name }}</strong>
+                    <span>{{ patient.time.strftime('%H:%M') }}</span>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No patients in queue</p>
+        {% endif %}
+    </div>
+
+    <div class="card">
+        <h3>Total Served Today</h3>
+        <p>{{ total }}</p>
+    </div>
+
+</body>
+</html>
