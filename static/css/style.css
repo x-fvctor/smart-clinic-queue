@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6cace; /* this controls the entire baground color of all pages */
+    text-align: center;
+}
+
+h1 {
+    color: #2b4450; /*only h1 color is affected here*/
+}
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #394750;
+    color: white;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+input {
+    padding: 10px;
+    width: 220px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+h2 {
+    color: #34495e;
+    margin-top: 20px;
+}
+footer {
+    margin-top: 30px;
+    color: #555;
+    font-size: 14px;
+}
