@@ -1,73 +1,34 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #c6cace; /* this controls the entire baground color of all pages */
+    font-family: Arial;
+    background: #1e1e2f;
+    color: white;
     text-align: center;
 }
 
 h1 {
-    color: #2b4450; /*only h1 color is affected here*/
+    color: #00d4ff;
 }
 
-a {
-    text-decoration: none;
+.actions a {
+    display: inline-block;
     margin: 10px;
-    padding: 10px 15px;
-    background-color: #394750;
-    color: white;
+    padding: 10px 20px;
+    background: #00d4ff;
+    color: black;
     border-radius: 5px;
 }
 
-a:hover {
-    background-color: #2980b9;
+.card {
+    background: #2c2c3e;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: white;
-    margin: 10px auto;
-    padding: 15px;
-    width: 320px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #2ecc71;
-    border: none;
-    color: white;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #27ae60;
-}
-
-input {
+.patient {
+    background: #444;
+    margin: 10px;
     padding: 10px;
-    width: 220px;
-    margin-bottom: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-}
-h2 {
-    color: #34495e;
-    margin-top: 20px;
-}
-footer {
-    margin-top: 30px;
-    color: #555;
-    font-size: 14px;
-}
-
-input {
-    padding: 10px;
-    width: 80%;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
 }
